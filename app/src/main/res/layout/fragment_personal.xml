@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/backgroundColor"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/y12">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y60"
+            android:background="@drawable/llayout_border"
+            android:gravity="center_vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="@dimen/y40"
+                android:layout_height="@dimen/y40"
+                android:src="@drawable/head"
+                android:layout_marginLeft="@dimen/y20"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="没有故事的程序员"
+                android:layout_marginLeft="@dimen/y20"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y34"
+            android:background="@drawable/llayout_border"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y17"
+                    android:text="10"
+                    android:gravity="center"
+                    android:textSize="@dimen/commonC1"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y17"
+                    android:text="公开文章"
+                    android:gravity="center"
+                    android:textSize="@dimen/commonC4"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y17"
+                    android:text="10"
+                    android:gravity="center"
+                    android:textSize="@dimen/commonC1"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y17"
+                    android:text="关注"
+                    android:gravity="center"
+                    android:textSize="@dimen/commonC4"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y17"
+                    android:text="10"
+                    android:gravity="center"
+                    android:textSize="@dimen/commonC1"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y17"
+                    android:text="粉丝"
+                    android:gravity="center"
+                    android:textSize="@dimen/commonC4"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y12"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y34"
+                android:background="@drawable/llayout_border"
+                android:paddingLeft="@dimen/y14">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_lock"
+                    android:text="私密文章"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="@dimen/y6"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/y14"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y34"
+                android:background="@drawable/llayout_border"
+                android:paddingLeft="@dimen/y14">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_label"
+                    android:text="收藏的文章"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="@dimen/y6"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/y14"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y34"
+                android:background="@drawable/llayout_border"
+                android:paddingLeft="@dimen/y14">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_favorite"
+                    android:text="喜欢的文章"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="@dimen/y6"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/y14"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y34"
+                android:background="@drawable/llayout_border"
+                android:paddingLeft="@dimen/y14">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_manage"
+                    android:text="我的专题"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="@dimen/y6"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/y14"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y34"
+                android:background="@drawable/llayout_border"
+                android:paddingLeft="@dimen/y14">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_barrage"
+                    android:text="我的文集"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="@dimen/y6"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/y14"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y34"
+                android:background="@drawable/llayout_border"
+                android:paddingLeft="@dimen/y14">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_focus"
+                    android:text="关注的专题/文集"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="@dimen/y6"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/y14"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y34"
+                android:background="@drawable/llayout_border"
+                android:paddingLeft="@dimen/y14">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_wallet"
+                    android:text="我的钱包"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="@dimen/y6"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y12"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y34"
+                android:background="@drawable/llayout_border"
+                android:paddingLeft="@dimen/y14">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_moon"
+                    android:text="夜间模式"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="@dimen/y6"/>
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/sc_receive_phone_number"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_height="@dimen/y10"
+                    android:checked="false"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/y8"
+                    app:theme="@style/MySwitch"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y34"
+                android:background="@drawable/llayout_border"
+                android:paddingLeft="@dimen/y14">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_record"
+                    android:text="浏览记录"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="@dimen/y6"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y12"
+            android:layout_marginBottom="@dimen/y12"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y34"
+                android:background="@drawable/llayout_border"
+                android:paddingLeft="@dimen/y14">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_share"
+                    android:text="分享简书"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="@dimen/y6"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y34"
+                android:background="@drawable/llayout_border"
+                android:paddingLeft="@dimen/y14">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_help"
+                    android:text="帮助与反馈"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="@dimen/y6"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y34"
+                android:background="@drawable/llayout_border"
+                android:paddingLeft="@dimen/y14">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_star"
+                    android:text="给简书评分"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="@dimen/y6"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
